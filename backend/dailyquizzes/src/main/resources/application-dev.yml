@@ -1,0 +1,15 @@
+spring:
+  datasource:
+    username: user
+    password: password
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://db:5432/dailyquizzes_db
+    jpa:
+      database-platform: org.hibernate.dialect.PostgreSQLDialect
+      hibernate:
+        ddl-auto: update  # or "validate", "create", "create-drop" depending on your needs
+      show-sql: true
+    sql:
+      init:
+        mode: always
+        platform: postgres

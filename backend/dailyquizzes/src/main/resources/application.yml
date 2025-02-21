@@ -1,0 +1,8 @@
+application:
+    name: Daily quizzes
+    description: insert here
+    author: heidise
+    version: 1.0
+spring:
+  profiles:
+    active: dev
